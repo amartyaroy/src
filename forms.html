@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+</head>
+<body>
+    <h1>User Contact Information</h1>
+    <form action="a.txt">
+        <label for="fname">First Name</label> 
+        <input type="text" name="FirstName" id="fname" value=""><br>
+        <label for="lname">Last Name</label>
+        <input type="text" name="LastName" id="lname" value=""><br>
+        <input type="radio" name="gender" id="male" value="male"><label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="female"><label for="female">Female</label><br>
+        <label for="dob">Date Of Birth</label><input type="date" name="dob" id="dob">
+        <label for="state">State</label><select name="State" id="state">
+            <option value="Assam">Assam</option>
+            <option value="Jharkhand" selected>Jharkhand</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="Tamil Name">Tamil Nadu</option>
+        </select><br>
+        <p>Hobbies</p>
+        <input type="checkbox" name="hobbies" id="hobbies" value="Playing"><label for="hobbies">Playing</label>
+        <input type="checkbox" name="hobbies" id="hobbies" value="Reading"><label for="hobbies">Reading</label><br>
+        <input type="button" value="Submit" onclick="onSubmitted()">
+    </form>
+    
+</body>
+</html>
+
+<script>
+    function onSubmitted(){
+        window.alert("form submitted");
+    }
+</script>
